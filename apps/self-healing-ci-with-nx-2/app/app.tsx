@@ -5,7 +5,7 @@ import NxWelcome from './nx-welcome';
 export function App() {
   return (
     <div>
-      <NxWelcome title="@self-healing-ci-with-nx-2/self-healing-ci-with-nx-2" />
+      <NxWelcome />
     </div>
   );
 }
