@@ -5,7 +5,7 @@
  Delete this file and get started with your project!
  * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
-export function NxWelcome({ title }: { title: string }) {
+export function NxWelcome() {
   return (
     <>
       <style
@@ -432,7 +432,7 @@ export function NxWelcome({ title }: { title: string }) {
           <div id="welcome">
             <h1>
               <span> Hello there, </span>
-              Welcome {title} 👋
+              Welcome 👋
             </h1>
           </div>
 
@@ -753,13 +753,13 @@ export function NxWelcome({ title }: { title: string }) {
               </summary>
               <pre>
                 <span># Build</span>
-                nx build {title}
+                nx build
                 <span># Test</span>
-                nx test {title}
+                nx test
                 <span># Lint</span>
-                nx lint {title}
+                nx lint
                 <span># Run them together!</span>
-                nx run-many -p {title} -t build test lint
+                nx run-many -t build test lint
               </pre>
             </details>
 
@@ -780,7 +780,7 @@ export function NxWelcome({ title }: { title: string }) {
                 </svg>
                 View project details
               </summary>
-              <pre>nx show project {title}</pre>
+              <pre>nx show project</pre>
             </details>
             <details>
               <summary>
