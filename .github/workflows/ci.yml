@@ -19,6 +19,7 @@ jobs:
       ANTHROPIC_DEFAULT_SONNET_MODEL: 'qwen/qwen3-coder:free'
       ANTHROPIC_DEFAULT_OPUS_MODEL: 'openai/gpt-5.2-pro'
       ANTHROPIC_DEFAULT_HAIKU_MODEL: 'qwen/qwen3-next-80b-a3b-instruct:free'
+      NX_FIX_CI_DEBUG_LOGGING: true
 
     runs-on: ubuntu-latest
     steps:
