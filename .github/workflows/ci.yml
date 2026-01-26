@@ -12,13 +12,13 @@ permissions:
 
 jobs:
   main:
-    # env:
-      # ANTHROPIC_BASE_URL: 'https://openrouter.ai/api'
-      # ANTHROPIC_AUTH_TOKEN: '${{ secrets.OPEN_ROUTER_KEY }}'
-      # ANTHROPIC_API_KEY: ''
-      # ANTHROPIC_DEFAULT_SONNET_MODEL: 'qwen/qwen3-coder:free'
-      # ANTHROPIC_DEFAULT_OPUS_MODEL: 'openai/gpt-5.2-pro'
-      # ANTHROPIC_DEFAULT_HAIKU_MODEL: 'qwen/qwen3-next-80b-a3b-instruct:free'
+    env:
+      ANTHROPIC_BASE_URL: 'https://api.z.ai/api/anthropic'
+      ANTHROPIC_AUTH_TOKEN: '${{ secrets.GLM_TOKEN }}'
+      ANTHROPIC_API_KEY: ''
+      ANTHROPIC_DEFAULT_SONNET_MODEL: 'glm-4.7'
+      ANTHROPIC_DEFAULT_OPUS_MODEL: 'glm-4.7'
+      ANTHROPIC_DEFAULT_HAIKU_MODEL: 'glm-4.4-Air'
 
     runs-on: ubuntu-latest
     steps:
